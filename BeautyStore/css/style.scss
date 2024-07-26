@@ -8,7 +8,7 @@ body {
   .header__nav {
     ul {
       display: grid;
-      grid-template-columns: repeat(5, 1fr) 1.5fr repeat(5, 1ft);
+      grid-template-columns: repeat(5, 1fr) 1.5fr repeat(5, 1fr);
     }
   }
 }
