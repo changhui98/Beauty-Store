@@ -9,6 +9,12 @@ body {
     ul {
       display: grid;
       grid-template-columns: repeat(5, 1fr) 1.5fr repeat(5, 1fr);
+      background-color: black;
+      gap: 2px;
+      .header__tab {
+        background-color: white;
+        padding: 20px 0px;
+      }
     }
   }
 }
