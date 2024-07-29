@@ -1,5 +1,8 @@
 @import "reset.scss";
 
+$borderColor: rgba(0, 0, 0, 0.4);
+$borderWidth: 2px;
+
 body {
   height: 100vh;
 }
@@ -9,11 +12,20 @@ body {
     ul {
       display: grid;
       grid-template-columns: repeat(5, 1fr) 1.5fr repeat(5, 1fr);
-      background-color: black;
-      gap: 2px;
+      background-color: $borderColor;
+      gap: $borderWidth;
+      border-bottom: $borderWidth solid $borderColor;
       .header__tab {
         background-color: white;
-        padding: 20px 0px;
+        padding: 30px 0px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        &:nth-child(6) {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 22px;
+        }
       }
     }
   }
