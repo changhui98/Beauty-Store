@@ -5,6 +5,8 @@ $borderWidth: 2px;
 
 body {
   height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
 }
 
 .header {
@@ -43,5 +45,15 @@ body {
         opacity: 0.5;
       }
     }
+  }
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+
+  .product__img {
+    background-image: url(/img/noname1.png);
+    background-size: cover;
   }
 }
