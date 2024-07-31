@@ -50,10 +50,18 @@ body {
 
 .product {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.3fr;
+  background-color: $borderColor;
+  gap: $borderWidth;
 
   .product__img {
     background-image: url(/img/noname1.png);
     background-size: cover;
+  }
+
+  .product__info {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
   }
 }
